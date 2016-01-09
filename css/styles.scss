@@ -1,4 +1,5 @@
 @import url('fonts.css');
+// Variables & Mixins *********************************************************
 $font-stack: Helvetica, sans-serif;
 $primary-color: #111;
 $yellow: #ECD078;
@@ -6,6 +7,58 @@ $orange: #D95B43;
 $red: #C02942;
 $burgundy: #542437;
 $teal: #53777A;
+
+$smallerPhone: 330px;
+$smallPhone: 360px;
+$mobile: 480px;
+$mid600: 600px;
+$tablet: 768px;
+$bigTablet: 900px;
+$desktop: 1024px;
+$bigDesktop: 1200px;
+
+@mixin small330 {
+  @media (max-width: #{$smallerPhone}) {
+    @content;
+  }
+}
+@mixin small360 {
+  @media (max-width: #{$smallPhone}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+@mixin mid600 {
+  @media (max-width: #{$mid600}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin big900 {
+  @media (max-width: #{$bigTablet}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin big1200 {
+  @media (max-width: #{$bigDesktop}) {
+    @content;
+  }
+}
+// ****************************************************************************
+
 html,
 body {
     font-family: $font-stack;
@@ -42,6 +95,9 @@ a {
             position: relative;
             width: 900px;
             margin: 0 auto;
+            @include big900 {
+                width: 90%;
+            }
             .site-title {
                 margin-top: 70px;
                 text-align: center;
@@ -49,10 +105,28 @@ a {
                 color: #fff;
                 .top {
                     font-size: 160px;
+                    @include big900 {
+                        font-size: 120px;
+                    }
+                    @include tablet {
+                        font-size: 80px;
+                    }
+                    @include mobile {
+                        font-size: 60px;
+                    }
+                    @include small360 {
+                        font-size: 50px;
+                    }
                 }
                 .bottom {
                     font-size: 48px;
                     font-style: italic;
+                    @include big900 {
+                        font-size: 36px;
+                    }
+                    @include tablet {
+                        font-size: 24px;
+                    }
                 }
             }
             .colophon {
@@ -60,6 +134,9 @@ a {
                 margin: 50px auto;
                 font-size: 14px;
                 color: #bbb;
+                @include tablet {
+                    // width: 480px;
+                }
                 a {
                     text-decoration: underline;
                     color: #bbb;
@@ -79,12 +156,22 @@ a {
                     width: 66%;
                     margin: 10px 10px 10px 25px;
                     vertical-align: top;
+                    @include tablet {
+                        width: 90%;
+                        display: block;
+                        margin: 25px auto;
+                    }
                 }
                 .column2 {
                     display: inline-block;
                     width: 25%;
                     margin: 10px;
                     vertical-align: top;
+                    @include tablet {
+                        width: 90%;
+                        display: block;
+                        margin: 25px auto;
+                    }
                 }
             }
         }
@@ -213,6 +300,9 @@ a {
             margin-top: 50px;
             margin-left: 100px;
             font-family: 'Roboto Condensed', sans-serif;
+            @include tablet {
+                margin-left: 10%;
+            }
             p {
                 margin: 0;
                 .white {
@@ -230,8 +320,14 @@ a {
         .text-wrapper {
             margin: 100px auto;
             width: 600px;
+            @include big900 {
+                width: 80%;
+            }
         }
         #latoRobotoSlab {
+            @include big900 {
+                width: 80%;
+            }
             h2 {
                 font-family: 'Lato', sans-serif;
                 text-transform: uppercase;
@@ -243,12 +339,17 @@ a {
                 font-family: 'Roboto Slab', serif;
                 font-weight: 300;
                 line-height: 1.5;
+                font-size: 16px;
                 a {
                     font-weight: 300;
                 }
             }
         }
         #ralewayLusitana {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             color: #fff;
             text-align: center;
             a {
@@ -259,6 +360,9 @@ a {
                 text-transform: uppercase;
                 font-size: 60px;
                 font-weight: 700;
+                @include mid600 {
+                    font-size: 40px;
+                }
             }
             p {
                 margin-top: 40px;
@@ -266,13 +370,23 @@ a {
                 font-size: 20px;
                 font-weight: 300;
                 line-height: 1.5;
+                @include mid600 {
+                    font-size: 16px;
+                }
             }
         }
         #nixieLibre {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             h2 {
                 font-family: 'Nixie One', cursive;
                 font-size: 60px;
                 font-weight: 700;
+                @include mid600 {
+                    font-size: 50px;
+                }
             }
             p {
                 margin-top: 40px;
@@ -280,9 +394,16 @@ a {
                 font-family: 'Libre Baskerville', serif;
                 font-size: 14px;
                 line-height: 1.5;
+                @include mid600 {
+                    margin-left: 0;
+                }
             }
         }
         #playfairSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: center;
             width: 400px;
 
@@ -294,6 +415,9 @@ a {
                 font-family: 'Playfair Display', serif;
                 font-size: 60px;
                 font-weight: 700;
+                @include mid600 {
+                    font-size: 44px;
+                }
             }
             p {
                 margin-top: 30px;
@@ -303,6 +427,10 @@ a {
             }
         }
         #droidSerifLato {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             color: #fff;
             a {
                 color: #fff;
@@ -311,6 +439,9 @@ a {
                 font-family: 'Droid Serif', serif;
                 font-size: 60px;
                 font-weight: 500;
+                @include mid600 {
+                    font-size: 50px;
+                }
             }
             p {
                 margin-top: 30px;
@@ -319,9 +450,16 @@ a {
                 line-height: 1.5;
                 font-weight: 200;
                 letter-spacing: 0.5px;
+                @include mid600 {
+                    font-size: 15px;
+                }
             }
         }
         #openSansSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: center;
             width: 400px;
             h2 {
@@ -344,6 +482,10 @@ a {
             }
         }
         #latoMerriweather {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: center;
             width: 500px;
             color: #fff;
@@ -373,14 +515,19 @@ a {
             }
         }
         #rufinaSintony {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             margin: 100px 150px;
             width: 500px;
             h2 {
                 font-family: 'Rufina', serif;
                 font-size: 70px;
                 font-weight: 700;
-
-                // text-transform: uppercase;
+                @include mid600 {
+                    font-size: 45px;
+                }
             }
             p {
                 margin-top: 30px;
@@ -388,11 +535,17 @@ a {
                 font-size: 16px;
                 line-height: 2;
                 font-weight: 100;
-
-                // letter-spacing: 0.2px;
+                @include mid600 {
+                    line-height: 1.5;
+                    font-size: 16px;
+                }
             }
         }
         #robotoSlabRoboto {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 800px;
             color: #fff;
             a {
@@ -402,6 +555,9 @@ a {
                 font-family: 'Roboto Slab', serif;
                 font-size: 80px;
                 font-weight: 100;
+                @include mid600 {
+                    font-size: 50px;
+                }
                 a {
                     font-weight: 100;
                 }
@@ -413,12 +569,21 @@ a {
                 line-height: 2;
                 font-weight: 300;
                 letter-spacing: 0.3px;
+                @include mid600 {
+                    font-size: 15px;
+                    letter-spacing: 0.2px;
+                    line-height: 1.5;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #yesevaMerriweather {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 500px;
             margin-top: 50px;
             margin-right: 100px;
@@ -432,8 +597,9 @@ a {
                 font-family: 'Yeseva One', cursive;
                 font-size: 65px;
                 font-weight: 100;
-
-                // text-transform: uppercase;
+                @include mid600 {
+                    font-size: 50px;
+                }
             }
             h3 {
                 margin-top: 10px;
@@ -441,6 +607,9 @@ a {
                 font-size: 20px;
                 font-weight: 100;
                 font-style: italic;
+                @include mid600 {
+                    font-size: 14px;
+                }
             }
             p {
                 margin-top: 30px;
@@ -453,6 +622,10 @@ a {
             }
         }
         #oxygenSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 800px;
 
             // color: #fff;
@@ -463,8 +636,9 @@ a {
                 font-family: 'Oxygen', sans-serif;
                 font-size: 80px;
                 font-weight: 100;
-
-                // text-transform: uppercase;
+                @include mid600 {
+                    font-size: 40px;
+                }
             }
             p {
                 margin-top: 30px;
@@ -474,16 +648,23 @@ a {
                 line-height: 1.5;
                 font-weight: 300;
                 letter-spacing: 0.3px;
+                @include mid600 {
+                    margin-left: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #vidalokaNotoSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 850px;
             color: #fff;
-
-            // margin-left: 100px;
             a {
                 color: #fff;
             }
@@ -491,8 +672,9 @@ a {
                 font-family: 'Vidaloka', serif;
                 font-size: 80px;
                 font-weight: 100;
-
-                // text-transform: uppercase;
+                @include mid600 {
+                    font-size: 60px;
+                }
             }
             p {
                 font-family: 'Noto Sans', sans-serif;
@@ -500,27 +682,27 @@ a {
                 line-height: 1.5;
                 font-weight: 300;
                 letter-spacing: 0.3px;
+                @include mid600 {
+                    font-size: 16px;
+                }
                 a {
                     font-weight: 100;
                 }
             }
         }
         #abrilJosefin {
-
-            // width: 850px;
-            // color: #fff;
-            // margin-left: 100px;
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: center;
-
-            // a {
-            //     color: #fff;
-            // }
             h2 {
                 font-family: 'Abril Fatface', cursive;
                 font-size: 80px;
                 font-weight: 100;
-
-                // text-transform: uppercase;
+                @include mid600 {
+                    font-size: 40px;
+                }
             }
             p {
                 font-family: 'Josefin Sans', sans-serif;
@@ -528,9 +710,16 @@ a {
                 line-height: 1.5;
                 font-weight: 400;
                 letter-spacing: 0.3px;
+                @include mid600 {
+                    font-size: 16px;
+                }
             }
         }
         #merriweatherSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 450px;
 
             // color: #fff;
@@ -561,6 +750,10 @@ a {
             }
         }
         #robotoNotoSerif {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 700px;
             text-align: left;
             color: #fff;
@@ -573,6 +766,9 @@ a {
                 font-weight: 300;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                @include mid600 {
+                    font-size: 36px;
+                }
             }
             p {
                 font-family: 'Noto Serif', serif;
@@ -581,9 +777,17 @@ a {
                 font-weight: 400;
                 letter-spacing: 0.5px;
                 margin-top: 30px;
+                @include mid600 {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
             }
         }
         #quattrocentoSerifSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 700px;
             text-align: center;
             color: #fff;
@@ -608,6 +812,10 @@ a {
             }
         }
         #ralewayPlayfair {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 800px;
             text-align: center;
             color: #fff;
@@ -633,6 +841,10 @@ a {
             }
         }
         #martelSerifSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 800px;
             text-align: left;
             color: #fff;
@@ -656,7 +868,10 @@ a {
             }
         }
         #surannaOpenSans {
-
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             // width: 800px;
             text-align: left;
             color: #fff;
@@ -666,10 +881,10 @@ a {
             h2 {
                 font-family: 'Suranna', serif;
                 font-size: 70px;
-
-                // font-weight: 900;
-                // text-transform: uppercase;
                 letter-spacing: 3px;
+                @include mid600 {
+                    line-height: 1;
+                }
             }
             p {
                 font-family: 'Open Sans', sans-serif;
@@ -678,12 +893,19 @@ a {
                 font-weight: 100;
                 letter-spacing: 1px;
                 margin-left: 50px;
+                @include mid600 {
+                    margin-left: 0px;
+                }
                 a {
                     font-weight: 100;
                 }
             }
         }
         #ovoOxygen {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 500px;
             text-align: right;
             margin-right: 100px;
@@ -708,31 +930,36 @@ a {
             }
         }
         #argonQuattrocentoSans {
-
-            // width: 500px;
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: left;
-
-            // margin-right: 100px;
-            // color: #fff;
-            // a {
-            //     color: #fff;
-            // }
             h2 {
                 font-family: 'argon';
                 font-size: 90px;
                 text-transform: uppercase;
                 letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 70px;
+                    letter-spacing: 0;
+                }
             }
             p {
                 font-family: 'Quattrocento Sans', sans-serif;
                 font-size: 16px;
                 line-height: 1.5;
                 font-weight: 100;
-
-                // letter-spacing: 1px;
+                @include mid600 {
+                    font-size: 15px;
+                }
             }
         }
         #sanchezProxima {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 500px;
             text-align: right;
             margin-right: 100px;
@@ -752,12 +979,16 @@ a {
                 font-size: 20px;
                 line-height: 1.5;
                 font-weight: 100;
-
-                // letter-spacing: 1px;
+                @include mid600 {
+                    font-size: 18px;
+                }
             }
         }
         #proximaSourceSans {
-
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             // width: 500px;
             // text-align: right;
             // margin-right: 100px;
@@ -777,12 +1008,19 @@ a {
                 font-size: 20px;
                 line-height: 1.5;
                 font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #harrietAlright {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 750px;
 
             // text-align: right;
@@ -796,22 +1034,25 @@ a {
             h2 {
                 font-family: 'harriet_displaybold';
                 font-size: 50px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
             }
             p {
                 font-family: 'alright_sanslight';
                 font-size: 20px;
                 line-height: 1.5;
                 font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #salomeOxygen {
-
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             // width: 750px;
             text-align: center;
             color: #fff;
@@ -821,49 +1062,54 @@ a {
             h2 {
                 font-family: 'salomeregular';
                 font-size: 70px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
             }
             p {
                 font-family: 'Oxygen', sans-serif;
                 font-size: 20px;
                 line-height: 2;
                 font-weight: 100;
+                @include mid600 {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #butlerAvenir {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 800px;
             text-align: right;
             margin-right: 100px;
-
-            // color: #fff;
-            // a {
-            //     color: #fff;
-            // }
             h2 {
                 font-family: 'butlerbold';
                 font-size: 70px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
+                @include mid600 {
+                    line-height: 1;
+                }
             }
             p {
                 font-family: 'AvenirLTStd-Book';
                 font-size: 20px;
                 line-height: 1.5;
                 font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #moonLora {
-
-            // width: 750px;
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: center;
             color: #fff;
             a {
@@ -872,54 +1118,58 @@ a {
             h2 {
                 font-family: 'moonlight';
                 font-size: 70px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 40px;
+                }
             }
             p {
                 font-family: 'Lora', serif;
                 font-size: 18px;
                 line-height: 2;
                 font-weight: 100;
+                @include mid600 {
+                    font-size: 16px;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #unnaAzo {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 800px;
             margin-top: 30px;
             margin-left: 100px;
 
-            // text-align: center;
-            // color: #fff;
-            // a {
-            //     color: #fff;
-            // }
             h2 {
                 font-family: 'unnabold';
                 font-size: 70px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 50px;
+                }
             }
             p {
                 font-family: 'azo_sanslight';
                 font-size: 18px;
                 line-height: 2;
-                // font-weight: 100;
                 margin-left: 100px;
+                @include mid600 {
+                    font-size: 16px;
+                    margin-left: 0;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #aleoLato {
-
-            // width: 800px;
-            // margin-top: 30px;
-            // margin-left: 100px;
-            // text-align: center;
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             color: #fff;
             a {
                 color: #fff;
@@ -927,65 +1177,64 @@ a {
             h2 {
                 font-family: 'aleoregular';
                 font-size: 60px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 40px;
+                }
             }
             p {
                 font-family: 'Lato', sans-serif;
                 font-size: 18px;
                 line-height: 2;
                 font-weight: 100;
+                @include mid600 {
+                    line-height: 1.5;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #quartoIdeal {
-
-            // width: 800px;
-            // margin-top: 30px;
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             margin-left: 100px;
-
-            // text-align: center;
-            // color: #fff;
-            // a {
-            //     color: #fff;
-            // }
             h2 {
                 font-family: 'quartobold';
                 font-size: 60px;
-
-                // text-transform: uppercase;
                 letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 50px;
+                    letter-spacing: 1px;
+                }
             }
             p {
                 font-family: 'Ideal Sans Book';
                 font-size: 18px;
                 line-height: 2;
                 font-weight: 100;
+                @include mid600 {
+                    line-height: 1.5;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #freightSansText {
-
-            // width: 800px;
-            // margin-top: 30px;
-            // margin-left: 100px;
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             text-align: center;
 
-            // color: #fff;
-            // a {
-            //     color: #fff;
-            // }
             h2 {
                 font-family: 'freightsansmedium';
                 font-size: 60px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 40px;
+                }
             }
             p {
                 font-family: 'freighttextbook';
@@ -993,12 +1242,19 @@ a {
                 line-height: 2;
                 font-weight: 100;
                 letter-spacing: 0.3px;
+                @include mid600 {
+                    line-height: 1.5;
+                }
                 a {
                     font-weight: 300;
                 }
             }
         }
         #freightBigSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
             width: 400px;
             margin-top: 50px;
             margin-right: 100px;
@@ -1010,9 +1266,9 @@ a {
             h2 {
                 font-family: 'freightbigboldregular';
                 font-size: 60px;
-
-                // text-transform: uppercase;
-                // letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 50px;
+                }
             }
             p {
                 font-family: 'freightsanslight';
@@ -1020,6 +1276,9 @@ a {
                 line-height: 1.5;
                 font-weight: 100;
                 letter-spacing: 0.5px;
+                @include mid600 {
+                    font-size: 16px;
+                }
                 a {
                     font-weight: 300;
                 }

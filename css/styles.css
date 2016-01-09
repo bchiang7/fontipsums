@@ -35,6 +35,9 @@ a {
       position: relative;
       width: 900px;
       margin: 0 auto; }
+      @media (max-width: 900px) {
+        .site-wrapper .intro .intro-wrapper {
+          width: 90%; } }
       .site-wrapper .intro .intro-wrapper .site-title {
         margin-top: 70px;
         text-align: center;
@@ -42,9 +45,27 @@ a {
         color: #fff; }
         .site-wrapper .intro .intro-wrapper .site-title .top {
           font-size: 160px; }
+          @media (max-width: 900px) {
+            .site-wrapper .intro .intro-wrapper .site-title .top {
+              font-size: 120px; } }
+          @media (max-width: 768px) {
+            .site-wrapper .intro .intro-wrapper .site-title .top {
+              font-size: 80px; } }
+          @media (max-width: 480px) {
+            .site-wrapper .intro .intro-wrapper .site-title .top {
+              font-size: 60px; } }
+          @media (max-width: 360px) {
+            .site-wrapper .intro .intro-wrapper .site-title .top {
+              font-size: 50px; } }
         .site-wrapper .intro .intro-wrapper .site-title .bottom {
           font-size: 48px;
           font-style: italic; }
+          @media (max-width: 900px) {
+            .site-wrapper .intro .intro-wrapper .site-title .bottom {
+              font-size: 36px; } }
+          @media (max-width: 768px) {
+            .site-wrapper .intro .intro-wrapper .site-title .bottom {
+              font-size: 24px; } }
       .site-wrapper .intro .intro-wrapper .colophon {
         width: 100%;
         margin: 50px auto;
@@ -65,11 +86,21 @@ a {
           width: 66%;
           margin: 10px 10px 10px 25px;
           vertical-align: top; }
+          @media (max-width: 768px) {
+            .site-wrapper .intro .intro-wrapper .colophon .column1 {
+              width: 90%;
+              display: block;
+              margin: 25px auto; } }
         .site-wrapper .intro .intro-wrapper .colophon .column2 {
           display: inline-block;
           width: 25%;
           margin: 10px;
           vertical-align: top; }
+          @media (max-width: 768px) {
+            .site-wrapper .intro .intro-wrapper .colophon .column2 {
+              width: 90%;
+              display: block;
+              margin: 25px auto; } }
   .site-wrapper .container-1 {
     background: #ECD078; }
   .site-wrapper .container-2 {
@@ -165,6 +196,9 @@ a {
       margin-top: 50px;
       margin-left: 100px;
       font-family: 'Roboto Condensed', sans-serif; }
+      @media (max-width: 768px) {
+        .site-wrapper .container .font-pair {
+          margin-left: 10%; } }
       .site-wrapper .container .font-pair p {
         margin: 0; }
         .site-wrapper .container .font-pair p .white {
@@ -176,6 +210,12 @@ a {
     .site-wrapper .container .text-wrapper {
       margin: 100px auto;
       width: 600px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container .text-wrapper {
+          width: 80%; } }
+    @media (max-width: 900px) {
+      .site-wrapper .container #latoRobotoSlab {
+        width: 80%; } }
     .site-wrapper .container #latoRobotoSlab h2 {
       font-family: 'Lato', sans-serif;
       text-transform: uppercase;
@@ -185,12 +225,17 @@ a {
       margin-top: 30px;
       font-family: 'Roboto Slab', serif;
       font-weight: 300;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: 16px; }
       .site-wrapper .container #latoRobotoSlab p a {
         font-weight: 300; }
     .site-wrapper .container #ralewayLusitana {
       color: #fff;
       text-align: center; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #ralewayLusitana {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #ralewayLusitana a {
         color: #fff; }
       .site-wrapper .container #ralewayLusitana h2 {
@@ -198,29 +243,52 @@ a {
         text-transform: uppercase;
         font-size: 60px;
         font-weight: 700; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #ralewayLusitana h2 {
+            font-size: 40px; } }
       .site-wrapper .container #ralewayLusitana p {
         margin-top: 40px;
         font-family: 'Lusitana', serif;
         font-size: 20px;
         font-weight: 300;
         line-height: 1.5; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #ralewayLusitana p {
+            font-size: 16px; } }
+    @media (max-width: 900px) {
+      .site-wrapper .container #nixieLibre {
+        width: 80%;
+        margin: 70px auto; } }
     .site-wrapper .container #nixieLibre h2 {
       font-family: 'Nixie One', cursive;
       font-size: 60px;
       font-weight: 700; }
+      @media (max-width: 600px) {
+        .site-wrapper .container #nixieLibre h2 {
+          font-size: 50px; } }
     .site-wrapper .container #nixieLibre p {
       margin-top: 40px;
       margin-left: 60px;
       font-family: 'Libre Baskerville', serif;
       font-size: 14px;
       line-height: 1.5; }
+      @media (max-width: 600px) {
+        .site-wrapper .container #nixieLibre p {
+          margin-left: 0; } }
     .site-wrapper .container #playfairSourceSans {
       text-align: center;
       width: 400px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #playfairSourceSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #playfairSourceSans h2 {
         font-family: 'Playfair Display', serif;
         font-size: 60px;
         font-weight: 700; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #playfairSourceSans h2 {
+            font-size: 44px; } }
       .site-wrapper .container #playfairSourceSans p {
         margin-top: 30px;
         font-family: 'Source Sans Pro', sans-serif;
@@ -228,12 +296,19 @@ a {
         line-height: 1.5; }
     .site-wrapper .container #droidSerifLato {
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #droidSerifLato {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #droidSerifLato a {
         color: #fff; }
       .site-wrapper .container #droidSerifLato h2 {
         font-family: 'Droid Serif', serif;
         font-size: 60px;
         font-weight: 500; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #droidSerifLato h2 {
+            font-size: 50px; } }
       .site-wrapper .container #droidSerifLato p {
         margin-top: 30px;
         font-family: 'Lato', sans-serif;
@@ -241,9 +316,16 @@ a {
         line-height: 1.5;
         font-weight: 200;
         letter-spacing: 0.5px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #droidSerifLato p {
+            font-size: 15px; } }
     .site-wrapper .container #openSansSourceSans {
       text-align: center;
       width: 400px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #openSansSourceSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #openSansSourceSans h2 {
         font-family: 'Open Sans', sans-serif;
         font-size: 36px;
@@ -261,6 +343,10 @@ a {
       text-align: center;
       width: 500px;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #latoMerriweather {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #latoMerriweather a {
         color: #fff; }
       .site-wrapper .container #latoMerriweather h2 {
@@ -283,25 +369,43 @@ a {
     .site-wrapper .container #rufinaSintony {
       margin: 100px 150px;
       width: 500px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #rufinaSintony {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #rufinaSintony h2 {
         font-family: 'Rufina', serif;
         font-size: 70px;
         font-weight: 700; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #rufinaSintony h2 {
+            font-size: 45px; } }
       .site-wrapper .container #rufinaSintony p {
         margin-top: 30px;
         font-family: 'Sintony', sans-serif;
         font-size: 16px;
         line-height: 2;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #rufinaSintony p {
+            line-height: 1.5;
+            font-size: 16px; } }
     .site-wrapper .container #robotoSlabRoboto {
       width: 800px;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #robotoSlabRoboto {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #robotoSlabRoboto a {
         color: #fff; }
       .site-wrapper .container #robotoSlabRoboto h2 {
         font-family: 'Roboto Slab', serif;
         font-size: 80px;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #robotoSlabRoboto h2 {
+            font-size: 50px; } }
         .site-wrapper .container #robotoSlabRoboto h2 a {
           font-weight: 100; }
       .site-wrapper .container #robotoSlabRoboto p {
@@ -311,6 +415,11 @@ a {
         line-height: 2;
         font-weight: 300;
         letter-spacing: 0.3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #robotoSlabRoboto p {
+            font-size: 15px;
+            letter-spacing: 0.2px;
+            line-height: 1.5; } }
         .site-wrapper .container #robotoSlabRoboto p a {
           font-weight: 300; }
     .site-wrapper .container #yesevaMerriweather {
@@ -318,16 +427,26 @@ a {
       margin-top: 50px;
       margin-right: 100px;
       text-align: right; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #yesevaMerriweather {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #yesevaMerriweather h2 {
         font-family: 'Yeseva One', cursive;
         font-size: 65px;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #yesevaMerriweather h2 {
+            font-size: 50px; } }
       .site-wrapper .container #yesevaMerriweather h3 {
         margin-top: 10px;
         font-family: 'Merriweather', serif;
         font-size: 20px;
         font-weight: 100;
         font-style: italic; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #yesevaMerriweather h3 {
+            font-size: 14px; } }
       .site-wrapper .container #yesevaMerriweather p {
         margin-top: 30px;
         font-family: 'Merriweather Sans', sans-serif;
@@ -336,10 +455,17 @@ a {
         font-weight: 300; }
     .site-wrapper .container #oxygenSourceSans {
       width: 800px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #oxygenSourceSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #oxygenSourceSans h2 {
         font-family: 'Oxygen', sans-serif;
         font-size: 80px;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #oxygenSourceSans h2 {
+            font-size: 40px; } }
       .site-wrapper .container #oxygenSourceSans p {
         margin-top: 30px;
         margin-left: 70px;
@@ -348,41 +474,70 @@ a {
         line-height: 1.5;
         font-weight: 300;
         letter-spacing: 0.3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #oxygenSourceSans p {
+            margin-left: 0;
+            font-size: 16px;
+            font-weight: 400; } }
         .site-wrapper .container #oxygenSourceSans p a {
           font-weight: 300; }
     .site-wrapper .container #vidalokaNotoSans {
       width: 850px;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #vidalokaNotoSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #vidalokaNotoSans a {
         color: #fff; }
       .site-wrapper .container #vidalokaNotoSans h2 {
         font-family: 'Vidaloka', serif;
         font-size: 80px;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #vidalokaNotoSans h2 {
+            font-size: 60px; } }
       .site-wrapper .container #vidalokaNotoSans p {
         font-family: 'Noto Sans', sans-serif;
         font-size: 20px;
         line-height: 1.5;
         font-weight: 300;
         letter-spacing: 0.3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #vidalokaNotoSans p {
+            font-size: 16px; } }
         .site-wrapper .container #vidalokaNotoSans p a {
           font-weight: 100; }
     .site-wrapper .container #abrilJosefin {
       text-align: center; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #abrilJosefin {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #abrilJosefin h2 {
         font-family: 'Abril Fatface', cursive;
         font-size: 80px;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #abrilJosefin h2 {
+            font-size: 40px; } }
       .site-wrapper .container #abrilJosefin p {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 20px;
         line-height: 1.5;
         font-weight: 400;
         letter-spacing: 0.3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #abrilJosefin p {
+            font-size: 16px; } }
     .site-wrapper .container #merriweatherSourceSans {
       width: 450px;
       margin-right: 100px;
       text-align: right; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #merriweatherSourceSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #merriweatherSourceSans h2 {
         font-family: 'Merriweather', serif;
         font-size: 40px;
@@ -401,6 +556,10 @@ a {
       width: 700px;
       text-align: left;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #robotoNotoSerif {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #robotoNotoSerif a {
         color: #fff; }
       .site-wrapper .container #robotoNotoSerif h2 {
@@ -409,6 +568,9 @@ a {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #robotoNotoSerif h2 {
+            font-size: 36px; } }
       .site-wrapper .container #robotoNotoSerif p {
         font-family: 'Noto Serif', serif;
         font-size: 16px;
@@ -416,10 +578,18 @@ a {
         font-weight: 400;
         letter-spacing: 0.5px;
         margin-top: 30px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #robotoNotoSerif p {
+            font-size: 14px;
+            line-height: 1.5; } }
     .site-wrapper .container #quattrocentoSerifSans {
       width: 700px;
       text-align: center;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #quattrocentoSerifSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #quattrocentoSerifSans a {
         color: #fff; }
       .site-wrapper .container #quattrocentoSerifSans h2 {
@@ -439,6 +609,10 @@ a {
       text-align: center;
       color: #fff;
       margin-top: 130px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #ralewayPlayfair {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #ralewayPlayfair a {
         color: #fff; }
       .site-wrapper .container #ralewayPlayfair h2 {
@@ -459,6 +633,10 @@ a {
       width: 800px;
       text-align: left;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #martelSerifSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #martelSerifSans a {
         color: #fff; }
       .site-wrapper .container #martelSerifSans h2 {
@@ -475,12 +653,19 @@ a {
     .site-wrapper .container #surannaOpenSans {
       text-align: left;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #surannaOpenSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #surannaOpenSans a {
         color: #fff; }
       .site-wrapper .container #surannaOpenSans h2 {
         font-family: 'Suranna', serif;
         font-size: 70px;
         letter-spacing: 3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #surannaOpenSans h2 {
+            line-height: 1; } }
       .site-wrapper .container #surannaOpenSans p {
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
@@ -488,6 +673,9 @@ a {
         font-weight: 100;
         letter-spacing: 1px;
         margin-left: 50px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #surannaOpenSans p {
+            margin-left: 0px; } }
         .site-wrapper .container #surannaOpenSans p a {
           font-weight: 100; }
     .site-wrapper .container #ovoOxygen {
@@ -495,6 +683,10 @@ a {
       text-align: right;
       margin-right: 100px;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #ovoOxygen {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #ovoOxygen a {
         color: #fff; }
       .site-wrapper .container #ovoOxygen h2 {
@@ -510,20 +702,35 @@ a {
         letter-spacing: 1px; }
     .site-wrapper .container #argonQuattrocentoSans {
       text-align: left; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #argonQuattrocentoSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #argonQuattrocentoSans h2 {
         font-family: 'argon';
         font-size: 90px;
         text-transform: uppercase;
         letter-spacing: 3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #argonQuattrocentoSans h2 {
+            font-size: 70px;
+            letter-spacing: 0; } }
       .site-wrapper .container #argonQuattrocentoSans p {
         font-family: 'Quattrocento Sans', sans-serif;
         font-size: 16px;
         line-height: 1.5;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #argonQuattrocentoSans p {
+            font-size: 15px; } }
     .site-wrapper .container #sanchezProxima {
       width: 500px;
       text-align: right;
       margin-right: 100px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #sanchezProxima {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #sanchezProxima h2 {
         font-family: 'Sanchez', serif;
         font-size: 50px;
@@ -534,6 +741,13 @@ a {
         font-size: 20px;
         line-height: 1.5;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #sanchezProxima p {
+            font-size: 18px; } }
+    @media (max-width: 900px) {
+      .site-wrapper .container #proximaSourceSans {
+        width: 80%;
+        margin: 70px auto; } }
     .site-wrapper .container #proximaSourceSans h2 {
       font-family: 'proximanova';
       font-size: 50px; }
@@ -542,12 +756,19 @@ a {
       font-size: 20px;
       line-height: 1.5;
       font-weight: 100; }
+      @media (max-width: 600px) {
+        .site-wrapper .container #proximaSourceSans p {
+          font-size: 18px; } }
       .site-wrapper .container #proximaSourceSans p a {
         font-weight: 300; }
     .site-wrapper .container #harrietAlright {
       width: 750px;
       margin-top: 70px;
       margin-left: 100px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #harrietAlright {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #harrietAlright h2 {
         font-family: 'harriet_displaybold';
         font-size: 50px; }
@@ -556,11 +777,18 @@ a {
         font-size: 20px;
         line-height: 1.5;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #harrietAlright p {
+            font-size: 18px; } }
         .site-wrapper .container #harrietAlright p a {
           font-weight: 300; }
     .site-wrapper .container #salomeOxygen {
       text-align: center;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #salomeOxygen {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #salomeOxygen a {
         color: #fff; }
       .site-wrapper .container #salomeOxygen h2 {
@@ -571,89 +799,155 @@ a {
         font-size: 20px;
         line-height: 2;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #salomeOxygen p {
+            font-size: 16px;
+            line-height: 1.5; } }
         .site-wrapper .container #salomeOxygen p a {
           font-weight: 300; }
     .site-wrapper .container #butlerAvenir {
       width: 800px;
       text-align: right;
       margin-right: 100px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #butlerAvenir {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #butlerAvenir h2 {
         font-family: 'butlerbold';
         font-size: 70px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #butlerAvenir h2 {
+            line-height: 1; } }
       .site-wrapper .container #butlerAvenir p {
         font-family: 'AvenirLTStd-Book';
         font-size: 20px;
         line-height: 1.5;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #butlerAvenir p {
+            font-size: 18px; } }
         .site-wrapper .container #butlerAvenir p a {
           font-weight: 300; }
     .site-wrapper .container #moonLora {
       text-align: center;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #moonLora {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #moonLora a {
         color: #fff; }
       .site-wrapper .container #moonLora h2 {
         font-family: 'moonlight';
         font-size: 70px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #moonLora h2 {
+            font-size: 40px; } }
       .site-wrapper .container #moonLora p {
         font-family: 'Lora', serif;
         font-size: 18px;
         line-height: 2;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #moonLora p {
+            font-size: 16px; } }
         .site-wrapper .container #moonLora p a {
           font-weight: 300; }
     .site-wrapper .container #unnaAzo {
       width: 800px;
       margin-top: 30px;
       margin-left: 100px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #unnaAzo {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #unnaAzo h2 {
         font-family: 'unnabold';
         font-size: 70px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #unnaAzo h2 {
+            font-size: 50px; } }
       .site-wrapper .container #unnaAzo p {
         font-family: 'azo_sanslight';
         font-size: 18px;
         line-height: 2;
         margin-left: 100px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #unnaAzo p {
+            font-size: 16px;
+            margin-left: 0; } }
         .site-wrapper .container #unnaAzo p a {
           font-weight: 300; }
     .site-wrapper .container #aleoLato {
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #aleoLato {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #aleoLato a {
         color: #fff; }
       .site-wrapper .container #aleoLato h2 {
         font-family: 'aleoregular';
         font-size: 60px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #aleoLato h2 {
+            font-size: 40px; } }
       .site-wrapper .container #aleoLato p {
         font-family: 'Lato', sans-serif;
         font-size: 18px;
         line-height: 2;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #aleoLato p {
+            line-height: 1.5; } }
         .site-wrapper .container #aleoLato p a {
           font-weight: 300; }
     .site-wrapper .container #quartoIdeal {
       margin-left: 100px; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #quartoIdeal {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #quartoIdeal h2 {
         font-family: 'quartobold';
         font-size: 60px;
         letter-spacing: 3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #quartoIdeal h2 {
+            font-size: 50px;
+            letter-spacing: 1px; } }
       .site-wrapper .container #quartoIdeal p {
         font-family: 'Ideal Sans Book';
         font-size: 18px;
         line-height: 2;
         font-weight: 100; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #quartoIdeal p {
+            line-height: 1.5; } }
         .site-wrapper .container #quartoIdeal p a {
           font-weight: 300; }
     .site-wrapper .container #freightSansText {
       text-align: center; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #freightSansText {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #freightSansText h2 {
         font-family: 'freightsansmedium';
         font-size: 60px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #freightSansText h2 {
+            font-size: 40px; } }
       .site-wrapper .container #freightSansText p {
         font-family: 'freighttextbook';
         font-size: 18px;
         line-height: 2;
         font-weight: 100;
         letter-spacing: 0.3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #freightSansText p {
+            line-height: 1.5; } }
         .site-wrapper .container #freightSansText p a {
           font-weight: 300; }
     .site-wrapper .container #freightBigSans {
@@ -662,17 +956,27 @@ a {
       margin-right: 100px;
       text-align: right;
       color: #fff; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #freightBigSans {
+          width: 80%;
+          margin: 70px auto; } }
       .site-wrapper .container #freightBigSans a {
         color: #fff; }
       .site-wrapper .container #freightBigSans h2 {
         font-family: 'freightbigboldregular';
         font-size: 60px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #freightBigSans h2 {
+            font-size: 50px; } }
       .site-wrapper .container #freightBigSans p {
         font-family: 'freightsanslight';
         font-size: 18px;
         line-height: 1.5;
         font-weight: 100;
         letter-spacing: 0.5px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #freightBigSans p {
+            font-size: 16px; } }
         .site-wrapper .container #freightBigSans p a {
           font-weight: 300; }
 
