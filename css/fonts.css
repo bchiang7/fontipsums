@@ -64,14 +64,9 @@
 @font-face {
     font-family: 'azo_sanslight';
     src: url('fonts/rui_abreu_-_azosans-light-webfont.eot');
-    src: url('fonts/rui_abreu_-_azosans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/rui_abreu_-_azosans-light-webfont.woff2') format('woff2'),
-         url('fonts/rui_abreu_-_azosans-light-webfont.woff') format('woff'),
-         url('fonts/rui_abreu_-_azosans-light-webfont.ttf') format('truetype'),
-         url('fonts/rui_abreu_-_azosans-light-webfont.svg#azo_sanslight') format('svg');
+    src: url('fonts/rui_abreu_-_azosans-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/rui_abreu_-_azosans-light-webfont.woff2') format('woff2'), url('fonts/rui_abreu_-_azosans-light-webfont.woff') format('woff'), url('fonts/rui_abreu_-_azosans-light-webfont.ttf') format('truetype'), url('fonts/rui_abreu_-_azosans-light-webfont.svg#azo_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'Ideal Sans Book';

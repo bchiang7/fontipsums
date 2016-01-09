@@ -675,7 +675,7 @@ a {
         margin-left: 50px; }
         @media (max-width: 600px) {
           .site-wrapper .container #surannaOpenSans p {
-            margin-left: 0px; } }
+            margin-left: 0; } }
         .site-wrapper .container #surannaOpenSans p a {
           font-weight: 100; }
     .site-wrapper .container #ovoOxygen {

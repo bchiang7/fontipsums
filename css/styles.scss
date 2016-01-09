@@ -1,4 +1,5 @@
 @import url('fonts.css');
+
 // Variables & Mixins *********************************************************
 $font-stack: Helvetica, sans-serif;
 $primary-color: #111;
@@ -7,7 +8,6 @@ $orange: #D95B43;
 $red: #C02942;
 $burgundy: #542437;
 $teal: #53777A;
-
 $smallerPhone: 330px;
 $smallPhone: 360px;
 $mobile: 480px;
@@ -16,49 +16,47 @@ $tablet: 768px;
 $bigTablet: 900px;
 $desktop: 1024px;
 $bigDesktop: 1200px;
-
 @mixin small330 {
-  @media (max-width: #{$smallerPhone}) {
-    @content;
-  }
+    @media (max-width: #{$smallerPhone}) {
+        @content;
+    }
 }
 @mixin small360 {
-  @media (max-width: #{$smallPhone}) {
-    @content;
-  }
+    @media (max-width: #{$smallPhone}) {
+        @content;
+    }
 }
 @mixin mobile {
-  @media (max-width: #{$mobile}) {
-    @content;
-  }
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
 }
 @mixin mid600 {
-  @media (max-width: #{$mid600}) {
-    @content;
-  }
+    @media (max-width: #{$mid600}) {
+        @content;
+    }
 }
 @mixin tablet {
-  @media (max-width: #{$tablet}) {
-    @content;
-  }
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
 }
 @mixin big900 {
-  @media (max-width: #{$bigTablet}) {
-    @content;
-  }
+    @media (max-width: #{$bigTablet}) {
+        @content;
+    }
 }
 @mixin desktop {
-  @media (max-width: #{$desktop}) {
-    @content;
-  }
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
 }
 @mixin big1200 {
-  @media (max-width: #{$bigDesktop}) {
-    @content;
-  }
+    @media (max-width: #{$bigDesktop}) {
+        @content;
+    }
 }
 // ****************************************************************************
-
 html,
 body {
     font-family: $font-stack;
@@ -135,6 +133,7 @@ a {
                 font-size: 14px;
                 color: #bbb;
                 @include tablet {
+
                     // width: 480px;
                 }
                 a {
@@ -143,8 +142,10 @@ a {
                 }
                 p {
                     text-align: left;
+
                     // font-family: 'Roboto Condensed', sans-serif;
                     font-family: 'Source Sans Pro', sans-serif;
+
                     // font-family: 'alright_sanslight';
                     font-weight: 100;
                     letter-spacing: 0.3px;
@@ -872,6 +873,7 @@ a {
                 width: 80%;
                 margin: 70px auto;
             }
+
             // width: 800px;
             text-align: left;
             color: #fff;
@@ -894,7 +896,7 @@ a {
                 letter-spacing: 1px;
                 margin-left: 50px;
                 @include mid600 {
-                    margin-left: 0px;
+                    margin-left: 0;
                 }
                 a {
                     font-weight: 100;
@@ -989,6 +991,7 @@ a {
                 width: 80%;
                 margin: 70px auto;
             }
+
             // width: 500px;
             // text-align: right;
             // margin-right: 100px;
@@ -1053,6 +1056,7 @@ a {
                 width: 80%;
                 margin: 70px auto;
             }
+
             // width: 750px;
             text-align: center;
             color: #fff;
@@ -1143,7 +1147,6 @@ a {
             width: 800px;
             margin-top: 30px;
             margin-left: 100px;
-
             h2 {
                 font-family: 'unnabold';
                 font-size: 70px;
@@ -1228,7 +1231,6 @@ a {
                 margin: 70px auto;
             }
             text-align: center;
-
             h2 {
                 font-family: 'freightsansmedium';
                 font-size: 60px;
