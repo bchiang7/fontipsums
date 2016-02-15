@@ -1286,5 +1286,66 @@ a {
                 }
             }
         }
+        #keplerWhitney {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+
+            // width: 500px;
+            // text-align: right;
+            // margin-right: 100px;
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Kepler Std';
+                font-size: 60px;
+            }
+            p {
+                font-family: 'Whitney';
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #utopiaSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 700px;
+            text-align: center;
+            h2 {
+                font-family: 'Utopia Std';
+                font-size: 60px;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            a {
+                color: #fff;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
     }
 }

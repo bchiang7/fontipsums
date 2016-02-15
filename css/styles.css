@@ -979,5 +979,48 @@ a {
             font-size: 16px; } }
         .site-wrapper .container #freightBigSans p a {
           font-weight: 300; }
+    @media (max-width: 900px) {
+      .site-wrapper .container #keplerWhitney {
+        width: 80%;
+        margin: 70px auto; } }
+    .site-wrapper .container #keplerWhitney h2 {
+      font-family: 'Kepler Std';
+      font-size: 60px; }
+    .site-wrapper .container #keplerWhitney p {
+      font-family: 'Whitney';
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 100; }
+      @media (max-width: 600px) {
+        .site-wrapper .container #keplerWhitney p {
+          font-size: 18px; } }
+      .site-wrapper .container #keplerWhitney p a {
+        font-weight: 300; }
+    .site-wrapper .container #utopiaSourceSans {
+      width: 700px;
+      text-align: center; }
+      @media (max-width: 900px) {
+        .site-wrapper .container #utopiaSourceSans {
+          width: 80%;
+          margin: 70px auto; } }
+      .site-wrapper .container #utopiaSourceSans h2 {
+        font-family: 'Utopia Std';
+        font-size: 60px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #utopiaSourceSans h2 {
+            font-size: 40px; } }
+      .site-wrapper .container #utopiaSourceSans a {
+        color: #fff; }
+      .site-wrapper .container #utopiaSourceSans p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 100;
+        letter-spacing: 0.3px; }
+        @media (max-width: 600px) {
+          .site-wrapper .container #utopiaSourceSans p {
+            line-height: 1.5; } }
+        .site-wrapper .container #utopiaSourceSans p a {
+          font-weight: 300; }
 
 /*# sourceMappingURL=styles.css.map */

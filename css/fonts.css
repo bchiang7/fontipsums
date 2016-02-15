@@ -117,3 +117,36 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Kepler Std';
+    src: url(fonts/KeplerStd-BoldDisp.eot);
+    src: url(fonts/KeplerStd-BoldDisp.eot?#iefix) format('embedded-opentype'),
+    url(fonts/KeplerStd-BoldDisp.woff2) format('woff2'),
+    url(fonts/KeplerStd-BoldDisp.woff) format('woff'),
+    url(fonts/KeplerStd-BoldDisp.ttf) format('truetype'),
+    url(fonts/KeplerStd-BoldDisp.svg#KeplerStd-BoldDisp) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url('fonts/Whitney-Light.eot');
+	src: url('fonts/Whitney-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Whitney-Light.woff2') format('woff2'),
+		url('fonts/Whitney-Light.woff') format('woff'),
+		url('fonts/Whitney-Light.ttf') format('truetype'),
+		url('fonts/Whitney-Light.svg#Whitney-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Utopia Std';
+	src: url('fonts/UtopiaStd-SemiboldDisp.eot');
+	src: url('fonts/UtopiaStd-SemiboldDisp.eot?#iefix') format('embedded-opentype'),
+		url('fonts/UtopiaStd-SemiboldDisp.woff2') format('woff2'),
+		url('fonts/UtopiaStd-SemiboldDisp.woff') format('woff'),
+		url('fonts/UtopiaStd-SemiboldDisp.ttf') format('truetype'),
+		url('fonts/UtopiaStd-SemiboldDisp.svg#UtopiaStd-SemiboldDisp') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
